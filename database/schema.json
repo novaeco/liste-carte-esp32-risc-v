@@ -1,0 +1,408 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ESP32 RISC-V Board Schema",
+  "description": "Schéma JSON pour la base de données des cartes ESP32 RISC-V",
+  "type": "object",
+  "required": [
+    "id",
+    "manufacturer",
+    "reference",
+    "soc",
+    "memory",
+    "connectivity",
+    "interfaces",
+    "software_support",
+    "documentation"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$",
+      "description": "Identifiant unique lowercase, slug format (ex: waveshare-esp32-p4-lcd-7)"
+    },
+    "manufacturer": {
+      "type": "string",
+      "description": "Nom du fabricant (ex: Waveshare, LilyGO, Espressif)"
+    },
+    "reference": {
+      "type": "string",
+      "description": "Référence produit exacte (ex: ESP32-P4-Touch-LCD-7.0)"
+    },
+    "commercial_name": {
+      "type": ["string", "null"],
+      "description": "Nom commercial optionnel (ex: 7 inch LCD Capacitive Touch)"
+    },
+    "revision": {
+      "type": ["string", "null"],
+      "description": "Numéro de révision PCB (ex: 1.0, v2.1)"
+    },
+    "release_date": {
+      "type": ["string", "null"],
+      "format": "date",
+      "description": "Date de sortie au format YYYY-MM-DD"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["production", "discontinued", "prerelease", "limited"],
+      "description": "Statut commercial de la carte"
+    },
+    "price_usd": {
+      "type": ["number", "null"],
+      "minimum": 0,
+      "description": "Prix indicatif en USD"
+    },
+    "soc": {
+      "type": "object",
+      "required": ["name", "architecture", "cores", "frequency_mhz"],
+      "properties": {
+        "name": {
+          "type": "string",
+          "enum": [
+            "ESP32-C2",
+            "ESP32-C3",
+            "ESP32-C5",
+            "ESP32-C6",
+            "ESP32-H2",
+            "ESP32-P4",
+            "ESP32-P4 + ESP32-C6"
+          ],
+          "description": "Nom du SoC principal"
+        },
+        "architecture": {
+          "type": "string",
+          "enum": ["RISC-V", "RISC-V Dual-SoC"],
+          "description": "Architecture processeur"
+        },
+        "cores": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 3,
+          "description": "Nombre de cœurs CPU"
+        },
+        "frequency_mhz": {
+          "type": "integer",
+          "minimum": 80,
+          "maximum": 500,
+          "description": "Fréquence d'horloge en MHz"
+        },
+        "riscv_isa": {
+          "type": ["string", "null"],
+          "description": "ISA RISC-V (ex: RV32IMAC, RV32IMC)"
+        }
+      }
+    },
+    "memory": {
+      "type": "object",
+      "required": ["flash_mb", "psram_mb", "sram_mb"],
+      "properties": {
+        "flash_mb": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Mémoire Flash en MB"
+        },
+        "psram_mb": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "PSRAM en MB"
+        },
+        "sram_mb": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "SRAM en MB"
+        },
+        "memory_type": {
+          "type": ["string", "null"],
+          "description": "Type de mémoire (ex: PSRAM, SPIRAM)"
+        }
+      }
+    },
+    "display": {
+      "type": "object",
+      "required": ["enabled"],
+      "properties": {
+        "enabled": {
+          "type": "boolean",
+          "description": "La carte a-t-elle un écran ?"
+        },
+        "size_inches": {
+          "type": ["number", "null"],
+          "minimum": 0.5,
+          "maximum": 15,
+          "description": "Taille écran en pouces (diagonale)"
+        },
+        "resolution": {
+          "type": ["string", "null"],
+          "pattern": "^[0-9]+x[0-9]+$",
+          "description": "Résolution en format WIDTHxHEIGHT (ex: 480x272)"
+        },
+        "type": {
+          "type": ["string", "null"],
+          "enum": [
+            "IPS LCD",
+            "TFT LCD",
+            "AMOLED",
+            "OLED",
+            "ePaper",
+            "e-ink",
+            null
+          ],
+          "description": "Type de technologie d'affichage"
+        },
+        "interface": {
+          "type": ["string", "null"],
+          "enum": ["SPI", "RGB", "MIPI DSI", "MIPI CSI", "Parallel", null],
+          "description": "Interface de communication avec l'écran"
+        },
+        "colors": {
+          "type": ["integer", "null"],
+          "description": "Nombre de couleurs (ex: 65536 pour 16-bit)"
+        },
+        "brightness": {
+          "type": ["boolean", "null"],
+          "description": "Contrôle de luminosité"
+        },
+        "touchscreen": {
+          "type": "boolean",
+          "description": "L'écran est-il tactile ?"
+        },
+        "touch_type": {
+          "type": ["string", "null"],
+          "enum": ["capacitive", "resistive", "inductive", null],
+          "description": "Type de technologie tactile"
+        },
+        "touch_controller": {
+          "type": ["string", "null"],
+          "description": "Contrôleur tactile (ex: GT911, CST816S)"
+        }
+      }
+    },
+    "connectivity": {
+      "type": "object",
+      "required": [
+        "wifi",
+        "bluetooth",
+        "zigbee",
+        "thread",
+        "matter",
+        "ethernet"
+      ],
+      "properties": {
+        "wifi": {
+          "type": "boolean",
+          "description": "Wi-Fi 802.11 b/g/n"
+        },
+        "wifi6": {
+          "type": "boolean",
+          "description": "Wi-Fi 6 (802.11ax)"
+        },
+        "bluetooth": {
+          "type": "boolean",
+          "description": "Bluetooth classique"
+        },
+        "ble": {
+          "type": "boolean",
+          "description": "Bluetooth Low Energy"
+        },
+        "zigbee": {
+          "type": "boolean",
+          "description": "Zigbee (IEEE 802.15.4)"
+        },
+        "thread": {
+          "type": "boolean",
+          "description": "Thread (OpenThread)"
+        },
+        "matter": {
+          "type": "boolean",
+          "description": "Matter/CSA protocol"
+        },
+        "ethernet": {
+          "type": "boolean",
+          "description": "Ethernet filaire"
+        }
+      }
+    },
+    "interfaces": {
+      "type": "object",
+      "required": ["gpio_count", "uart", "spi", "i2c", "i2s", "usb"],
+      "properties": {
+        "gpio_count": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Nombre de GPIO"
+        },
+        "uart": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Nombre d'UART"
+        },
+        "spi": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Nombre de SPI"
+        },
+        "i2c": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Nombre d'I2C"
+        },
+        "i2s": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Nombre d'I2S"
+        },
+        "usb": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Nombre de ports USB"
+        },
+        "usb_type": {
+          "type": ["string", "null"],
+          "enum": ["USB 2.0 FS", "USB 2.0 HS", "USB 3.0", "USB-C", null],
+          "description": "Type de port USB"
+        },
+        "jtag": {
+          "type": "boolean",
+          "description": "Port JTAG pour débogage"
+        },
+        "can": {
+          "type": "boolean",
+          "description": "Interface CAN/TWAI"
+        },
+        "microsd": {
+          "type": "boolean",
+          "description": "Lecteur microSD"
+        }
+      }
+    },
+    "multimedia": {
+      "type": "object",
+      "properties": {
+        "camera": {
+          "type": "boolean",
+          "description": "Caméra intégrée"
+        },
+        "mipi_csi": {
+          "type": "boolean",
+          "description": "Interface MIPI CSI pour caméra"
+        },
+        "dvp": {
+          "type": "boolean",
+          "description": "Interface DVP pour caméra"
+        },
+        "microphone": {
+          "type": "boolean",
+          "description": "Microphone intégré"
+        },
+        "speaker": {
+          "type": "boolean",
+          "description": "Haut-parleur intégré"
+        },
+        "audio_codec": {
+          "type": ["string", "null"],
+          "description": "Codec audio (ex: ES8311, AC101)"
+        }
+      }
+    },
+    "software_support": {
+      "type": "object",
+      "properties": {
+        "esp_idf": {
+          "type": "boolean",
+          "description": "Support ESP-IDF"
+        },
+        "arduino": {
+          "type": "boolean",
+          "description": "Support Arduino IDE"
+        },
+        "platformio": {
+          "type": "boolean",
+          "description": "Support PlatformIO"
+        },
+        "zephyr": {
+          "type": "boolean",
+          "description": "Support Zephyr RTOS"
+        },
+        "micropython": {
+          "type": "boolean",
+          "description": "Support MicroPython"
+        },
+        "lvgl": {
+          "type": "boolean",
+          "description": "Support LVGL pour UI graphique"
+        },
+        "rust": {
+          "type": "boolean",
+          "description": "Support Rust (esp-rs)"
+        }
+      }
+    },
+    "documentation": {
+      "type": "object",
+      "properties": {
+        "datasheet_url": {
+          "type": ["string", "null"],
+          "format": "uri",
+          "description": "URL de la fiche technique"
+        },
+        "schematic_url": {
+          "type": ["string", "null"],
+          "format": "uri",
+          "description": "URL du schéma PCB"
+        },
+        "pinout_url": {
+          "type": ["string", "null"],
+          "format": "uri",
+          "description": "URL du pinout"
+        },
+        "github_repo": {
+          "type": ["string", "null"],
+          "format": "uri",
+          "description": "Dépôt GitHub official"
+        },
+        "wiki_url": {
+          "type": ["string", "null"],
+          "format": "uri",
+          "description": "URL Wiki/Documentation"
+        },
+        "manual_url": {
+          "type": ["string", "null"],
+          "format": "uri",
+          "description": "URL du manuel complet"
+        },
+        "examples_url": {
+          "type": ["string", "null"],
+          "format": "uri",
+          "description": "URL des exemples code"
+        },
+        "notes": {
+          "type": ["string", "null"],
+          "description": "Notes additionnelles, limitations, ou informations spéciales"
+        }
+      }
+    },
+    "links": {
+      "type": "object",
+      "properties": {
+        "buy_link": {
+          "type": ["string", "null"],
+          "format": "uri",
+          "description": "Lien pour acheter la carte"
+        },
+        "manufacturer_page": {
+          "type": ["string", "null"],
+          "format": "uri",
+          "description": "Page produit du fabricant"
+        },
+        "github_projects": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "format": "uri"
+          },
+          "description": "Projets GitHub utilisant cette carte"
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}
