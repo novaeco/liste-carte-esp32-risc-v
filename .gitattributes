@@ -1,0 +1,58 @@
+# Git attributes for consistent line endings and file handling
+
+# Auto detect text files and normalize line endings to LF
+* text=auto
+
+# JSON files
+*.json text eol=lf
+*.jsonc text eol=lf
+
+# Python files
+*.py text eol=lf
+*.pyw text eol=lf
+*.pyx text eol=lf
+
+# Shell scripts
+*.sh text eol=lf
+*.bash text eol=lf
+
+# Markdown
+*.md text eol=lf
+*.markdown text eol=lf
+
+# YAML
+*.yaml text eol=lf
+*.yml text eol=lf
+
+# CSV
+*.csv text eol=lf
+
+# Documentation
+*.txt text eol=lf
+*.rst text eol=lf
+
+# Windows batch files
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.exe binary
+*.msi binary
+
+# Binary files
+*.pdf binary
+*.xlsx binary
+*.xls binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.mov binary
+*.mp4 binary
+*.mp3 binary
+*.gz binary
+*.zip binary
+*.7z binary
+*.ttf binary
+*.otf binary
+*.db binary
+*.sqlite binary
