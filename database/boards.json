@@ -1,1 +1,1719 @@
-[]
+[
+  {
+    "id": "espressif-esp32-c2-devkit",
+    "manufacturer": "Espressif",
+    "reference": "ESP32-C2-DevKitM-1",
+    "commercial_name": "ESP32-C2 Development Kit",
+    "revision": "1.0",
+    "release_date": "2022-11-16",
+    "status": "production",
+    "price_usd": 7.99,
+    "soc": {
+      "name": "ESP32-C2",
+      "architecture": "RISC-V",
+      "cores": 1,
+      "frequency_mhz": 120,
+      "riscv_isa": "RV32IMC"
+    },
+    "memory": {
+      "flash_mb": 2,
+      "psram_mb": 0,
+      "sram_mb": 0.5,
+      "memory_type": null
+    },
+    "display": {
+      "enabled": false,
+      "size_inches": null,
+      "resolution": null,
+      "type": null,
+      "interface": null,
+      "colors": null,
+      "brightness": null,
+      "touchscreen": false,
+      "touch_type": null,
+      "touch_controller": null
+    },
+    "connectivity": {
+      "wifi": false,
+      "wifi6": false,
+      "bluetooth": false,
+      "ble": false,
+      "zigbee": false,
+      "thread": false,
+      "matter": false,
+      "ethernet": false
+    },
+    "interfaces": {
+      "gpio_count": 20,
+      "uart": 2,
+      "spi": 1,
+      "i2c": 1,
+      "i2s": 1,
+      "usb": 1,
+      "usb_type": "USB-C",
+      "jtag": true,
+      "can": false,
+      "microsd": false
+    },
+    "multimedia": {
+      "camera": false,
+      "mipi_csi": false,
+      "dvp": false,
+      "microphone": false,
+      "speaker": false,
+      "audio_codec": null
+    },
+    "software_support": {
+      "esp_idf": true,
+      "arduino": true,
+      "platformio": true,
+      "zephyr": true,
+      "micropython": true,
+      "lvgl": false,
+      "rust": true
+    },
+    "documentation": {
+      "datasheet_url": "https://www.espressif.com/sites/default/files/documentation/esp32-c2_datasheet_en.pdf",
+      "schematic_url": "https://github.com/espressif/esp-dev-kits/tree/master/esp32-c2-devkit-m",
+      "pinout_url": "https://docs.espressif.com/projects/esp-idf/en/latest/esp32c2/hw-reference/esp32-c2-devkit-m-1.html",
+      "github_repo": "https://github.com/espressif/esp-dev-kits",
+      "wiki_url": "https://docs.espressif.com/projects/esp-idf/en/latest/esp32c2/",
+      "manual_url": null,
+      "examples_url": "https://github.com/espressif/esp-idf/tree/master/examples",
+      "notes": "Ultra-low cost, entry-level RISC-V board. No wireless connectivity."
+    },
+    "links": {
+      "buy_link": "https://www.espressif.com/en/products/devkits",
+      "manufacturer_page": "https://www.espressif.com/en/products/devkits/esp32-c2-devkit-m-1",
+      "github_projects": []
+    }
+  },
+  {
+    "id": "espressif-esp32-c3-devkitm-1",
+    "manufacturer": "Espressif",
+    "reference": "ESP32-C3-DevKitM-1",
+    "commercial_name": "ESP32-C3 Development Kit M",
+    "revision": "1.0",
+    "release_date": "2021-06-01",
+    "status": "production",
+    "price_usd": 9.99,
+    "soc": {
+      "name": "ESP32-C3",
+      "architecture": "RISC-V",
+      "cores": 1,
+      "frequency_mhz": 160,
+      "riscv_isa": "RV32IMAC"
+    },
+    "memory": {
+      "flash_mb": 4,
+      "psram_mb": 0,
+      "sram_mb": 0.4,
+      "memory_type": null
+    },
+    "display": {
+      "enabled": false,
+      "size_inches": null,
+      "resolution": null,
+      "type": null,
+      "interface": null,
+      "colors": null,
+      "brightness": null,
+      "touchscreen": false,
+      "touch_type": null,
+      "touch_controller": null
+    },
+    "connectivity": {
+      "wifi": true,
+      "wifi6": false,
+      "bluetooth": false,
+      "ble": true,
+      "zigbee": false,
+      "thread": false,
+      "matter": false,
+      "ethernet": false
+    },
+    "interfaces": {
+      "gpio_count": 22,
+      "uart": 2,
+      "spi": 1,
+      "i2c": 1,
+      "i2s": 1,
+      "usb": 1,
+      "usb_type": "USB-C",
+      "jtag": true,
+      "can": false,
+      "microsd": false
+    },
+    "multimedia": {
+      "camera": false,
+      "mipi_csi": false,
+      "dvp": false,
+      "microphone": false,
+      "speaker": false,
+      "audio_codec": null
+    },
+    "software_support": {
+      "esp_idf": true,
+      "arduino": true,
+      "platformio": true,
+      "zephyr": true,
+      "micropython": true,
+      "lvgl": false,
+      "rust": true
+    },
+    "documentation": {
+      "datasheet_url": "https://www.espressif.com/sites/default/files/documentation/esp32-c3_datasheet_en.pdf",
+      "schematic_url": "https://github.com/espressif/esp-dev-kits/tree/master/esp32-c3-devkit-m-1",
+      "pinout_url": "https://docs.espressif.com/projects/esp-idf/en/latest/esp32c3/hw-reference/esp32-c3-devkitm-1.html",
+      "github_repo": "https://github.com/espressif/esp-dev-kits",
+      "wiki_url": "https://docs.espressif.com/projects/esp-idf/en/latest/esp32c3/",
+      "manual_url": null,
+      "examples_url": "https://github.com/espressif/esp-idf/tree/master/examples",
+      "notes": "Entry-level RISC-V with Wi-Fi and BLE. Very popular for IoT projects."
+    },
+    "links": {
+      "buy_link": "https://www.espressif.com/en/products/devkits",
+      "manufacturer_page": "https://www.espressif.com/en/products/devkits/esp32-c3-devkitm-1",
+      "github_projects": []
+    }
+  },
+  {
+    "id": "espressif-esp32-c6-devkitc-1",
+    "manufacturer": "Espressif",
+    "reference": "ESP32-C6-DevKitC-1",
+    "commercial_name": "ESP32-C6 Development Kit C",
+    "revision": "1.0",
+    "release_date": "2023-08-28",
+    "status": "production",
+    "price_usd": 14.99,
+    "soc": {
+      "name": "ESP32-C6",
+      "architecture": "RISC-V",
+      "cores": 1,
+      "frequency_mhz": 160,
+      "riscv_isa": "RV32IMAC"
+    },
+    "memory": {
+      "flash_mb": 8,
+      "psram_mb": 0,
+      "sram_mb": 0.5,
+      "memory_type": null
+    },
+    "display": {
+      "enabled": false,
+      "size_inches": null,
+      "resolution": null,
+      "type": null,
+      "interface": null,
+      "colors": null,
+      "brightness": null,
+      "touchscreen": false,
+      "touch_type": null,
+      "touch_controller": null
+    },
+    "connectivity": {
+      "wifi": true,
+      "wifi6": true,
+      "bluetooth": false,
+      "ble": true,
+      "zigbee": true,
+      "thread": true,
+      "matter": true,
+      "ethernet": false
+    },
+    "interfaces": {
+      "gpio_count": 30,
+      "uart": 2,
+      "spi": 2,
+      "i2c": 1,
+      "i2s": 1,
+      "usb": 1,
+      "usb_type": "USB-C",
+      "jtag": true,
+      "can": true,
+      "microsd": false
+    },
+    "multimedia": {
+      "camera": false,
+      "mipi_csi": false,
+      "dvp": false,
+      "microphone": false,
+      "speaker": false,
+      "audio_codec": null
+    },
+    "software_support": {
+      "esp_idf": true,
+      "arduino": true,
+      "platformio": true,
+      "zephyr": true,
+      "micropython": true,
+      "lvgl": false,
+      "rust": true
+    },
+    "documentation": {
+      "datasheet_url": "https://www.espressif.com/sites/default/files/documentation/esp32-c6_datasheet_en.pdf",
+      "schematic_url": "https://github.com/espressif/esp-dev-kits/tree/master/esp32-c6-devkit-c",
+      "pinout_url": "https://docs.espressif.com/projects/esp-idf/en/latest/esp32c6/hw-reference/esp32-c6-devkitc-1.html",
+      "github_repo": "https://github.com/espressif/esp-dev-kits",
+      "wiki_url": "https://docs.espressif.com/projects/esp-idf/en/latest/esp32c6/",
+      "manual_url": null,
+      "examples_url": "https://github.com/espressif/esp-idf/tree/master/examples",
+      "notes": "Professional RISC-V with Wi-Fi 6, Zigbee, Thread, Matter support. Industrial-grade connectivity."
+    },
+    "links": {
+      "buy_link": "https://www.espressif.com/en/products/devkits",
+      "manufacturer_page": "https://www.espressif.com/en/products/devkits/esp32-c6-devkitc-1",
+      "github_projects": []
+    }
+  },
+  {
+    "id": "espressif-esp32-h2-devkit",
+    "manufacturer": "Espressif",
+    "reference": "ESP32-H2-DevKitM-1",
+    "commercial_name": "ESP32-H2 Development Kit",
+    "revision": "1.0",
+    "release_date": "2024-01-15",
+    "status": "production",
+    "price_usd": 12.99,
+    "soc": {
+      "name": "ESP32-H2",
+      "architecture": "RISC-V",
+      "cores": 1,
+      "frequency_mhz": 96,
+      "riscv_isa": "RV32IMAC"
+    },
+    "memory": {
+      "flash_mb": 4,
+      "psram_mb": 0,
+      "sram_mb": 0.4,
+      "memory_type": null
+    },
+    "display": {
+      "enabled": false,
+      "size_inches": null,
+      "resolution": null,
+      "type": null,
+      "interface": null,
+      "colors": null,
+      "brightness": null,
+      "touchscreen": false,
+      "touch_type": null,
+      "touch_controller": null
+    },
+    "connectivity": {
+      "wifi": false,
+      "wifi6": false,
+      "bluetooth": false,
+      "ble": true,
+      "zigbee": true,
+      "thread": true,
+      "matter": true,
+      "ethernet": false
+    },
+    "interfaces": {
+      "gpio_count": 20,
+      "uart": 2,
+      "spi": 1,
+      "i2c": 1,
+      "i2s": 1,
+      "usb": 1,
+      "usb_type": "USB-C",
+      "jtag": true,
+      "can": false,
+      "microsd": false
+    },
+    "multimedia": {
+      "camera": false,
+      "mipi_csi": false,
+      "dvp": false,
+      "microphone": false,
+      "speaker": false,
+      "audio_codec": null
+    },
+    "software_support": {
+      "esp_idf": true,
+      "arduino": true,
+      "platformio": true,
+      "zephyr": true,
+      "micropython": true,
+      "lvgl": false,
+      "rust": true
+    },
+    "documentation": {
+      "datasheet_url": "https://www.espressif.com/sites/default/files/documentation/esp32-h2_datasheet_en.pdf",
+      "schematic_url": "https://github.com/espressif/esp-dev-kits/tree/master/esp32-h2-devkit",
+      "pinout_url": "https://docs.espressif.com/projects/esp-idf/en/latest/esp32h2/hw-reference/esp32-h2-devkit.html",
+      "github_repo": "https://github.com/espressif/esp-dev-kits",
+      "wiki_url": "https://docs.espressif.com/projects/esp-idf/en/latest/esp32h2/",
+      "manual_url": null,
+      "examples_url": "https://github.com/espressif/esp-idf/tree/master/examples",
+      "notes": "Bluetooth LE, Zigbee, Thread, Matter. No Wi-Fi. Optimized for low power mesh networks."
+    },
+    "links": {
+      "buy_link": "https://www.espressif.com/en/products/devkits",
+      "manufacturer_page": "https://www.espressif.com/en/products/devkits/esp32-h2-devkit",
+      "github_projects": []
+    }
+  },
+  {
+    "id": "espressif-esp32-p4-devkit",
+    "manufacturer": "Espressif",
+    "reference": "ESP32-P4-DevKit-2",
+    "commercial_name": "ESP32-P4 Development Kit",
+    "revision": "2.0",
+    "release_date": "2024-04-01",
+    "status": "production",
+    "price_usd": 89.99,
+    "soc": {
+      "name": "ESP32-P4",
+      "architecture": "RISC-V",
+      "cores": 2,
+      "frequency_mhz": 360,
+      "riscv_isa": "RV32IMAC"
+    },
+    "memory": {
+      "flash_mb": 16,
+      "psram_mb": 16,
+      "sram_mb": 0.8,
+      "memory_type": "PSRAM"
+    },
+    "display": {
+      "enabled": false,
+      "size_inches": null,
+      "resolution": null,
+      "type": null,
+      "interface": null,
+      "colors": null,
+      "brightness": null,
+      "touchscreen": false,
+      "touch_type": null,
+      "touch_controller": null
+    },
+    "connectivity": {
+      "wifi": false,
+      "wifi6": false,
+      "bluetooth": false,
+      "ble": false,
+      "zigbee": false,
+      "thread": false,
+      "matter": false,
+      "ethernet": true
+    },
+    "interfaces": {
+      "gpio_count": 55,
+      "uart": 3,
+      "spi": 3,
+      "i2c": 1,
+      "i2s": 2,
+      "usb": 2,
+      "usb_type": "USB 2.0 HS",
+      "jtag": true,
+      "can": true,
+      "microsd": true
+    },
+    "multimedia": {
+      "camera": true,
+      "mipi_csi": true,
+      "dvp": true,
+      "microphone": true,
+      "speaker": true,
+      "audio_codec": "ES7243E"
+    },
+    "software_support": {
+      "esp_idf": true,
+      "arduino": true,
+      "platformio": true,
+      "zephyr": false,
+      "micropython": true,
+      "lvgl": true,
+      "rust": true
+    },
+    "documentation": {
+      "datasheet_url": "https://www.espressif.com/sites/default/files/documentation/esp32-p4_datasheet_en.pdf",
+      "schematic_url": "https://github.com/espressif/esp-dev-kits/tree/master/esp32-p4-devkit",
+      "pinout_url": "https://docs.espressif.com/projects/esp-idf/en/latest/esp32p4/hw-reference/esp32-p4-devkit.html",
+      "github_repo": "https://github.com/espressif/esp-dev-kits",
+      "wiki_url": "https://docs.espressif.com/projects/esp-idf/en/latest/esp32p4/",
+      "manual_url": null,
+      "examples_url": "https://github.com/espressif/esp-idf/tree/master/examples",
+      "notes": "Dual-core high-performance RISC-V. No wireless connectivity. Graphics and AI capable. Ethernet for network."
+    },
+    "links": {
+      "buy_link": "https://www.espressif.com/en/products/devkits",
+      "manufacturer_page": "https://www.espressif.com/en/products/devkits/esp32-p4-devkit",
+      "github_projects": []
+    }
+  },
+  {
+    "id": "waveshare-esp32-p4-touch-lcd-7",
+    "manufacturer": "Waveshare",
+    "reference": "ESP32-P4-Touch-LCD-7.0",
+    "commercial_name": "7 Inch ESP32-P4 Capacitive Touch LCD",
+    "revision": "1.0",
+    "release_date": "2024-06-15",
+    "status": "production",
+    "price_usd": 189.99,
+    "soc": {
+      "name": "ESP32-P4",
+      "architecture": "RISC-V",
+      "cores": 2,
+      "frequency_mhz": 360,
+      "riscv_isa": "RV32IMAC"
+    },
+    "memory": {
+      "flash_mb": 16,
+      "psram_mb": 32,
+      "sram_mb": 0.8,
+      "memory_type": "PSRAM"
+    },
+    "display": {
+      "enabled": true,
+      "size_inches": 7.0,
+      "resolution": "800x480",
+      "type": "IPS LCD",
+      "interface": "RGB",
+      "colors": 16777216,
+      "brightness": true,
+      "touchscreen": true,
+      "touch_type": "capacitive",
+      "touch_controller": "GT911"
+    },
+    "connectivity": {
+      "wifi": false,
+      "wifi6": false,
+      "bluetooth": false,
+      "ble": false,
+      "zigbee": false,
+      "thread": false,
+      "matter": false,
+      "ethernet": true
+    },
+    "interfaces": {
+      "gpio_count": 55,
+      "uart": 3,
+      "spi": 3,
+      "i2c": 1,
+      "i2s": 2,
+      "usb": 2,
+      "usb_type": "USB 2.0 HS",
+      "jtag": true,
+      "can": true,
+      "microsd": true
+    },
+    "multimedia": {
+      "camera": true,
+      "mipi_csi": true,
+      "dvp": false,
+      "microphone": false,
+      "speaker": false,
+      "audio_codec": null
+    },
+    "software_support": {
+      "esp_idf": true,
+      "arduino": true,
+      "platformio": true,
+      "zephyr": false,
+      "micropython": true,
+      "lvgl": true,
+      "rust": true
+    },
+    "documentation": {
+      "datasheet_url": "https://www.waveshare.com/wiki/ESP32-P4-Touch-LCD-7.0",
+      "schematic_url": "https://www.waveshare.com/wiki/ESP32-P4-Touch-LCD-7.0",
+      "pinout_url": "https://www.waveshare.com/wiki/ESP32-P4-Touch-LCD-7.0",
+      "github_repo": "https://github.com/waveshare/ESP32-P4-Touch-LCD",
+      "wiki_url": "https://www.waveshare.com/wiki/ESP32-P4-Touch-LCD-7.0",
+      "manual_url": null,
+      "examples_url": "https://github.com/waveshare/ESP32-P4-Touch-LCD",
+      "notes": "Professional 7\" RGB interface capacitive touch display. LVGL ready. High performance graphics."
+    },
+    "links": {
+      "buy_link": "https://www.waveshare.com/shop/ESP32-P4-Touch-LCD-7.0.htm",
+      "manufacturer_page": "https://www.waveshare.com/product/ESP32-P4-Touch-LCD-7.0.htm",
+      "github_projects": [
+        "https://github.com/waveshare/ESP32-P4-Touch-LCD"
+      ]
+    }
+  },
+  {
+    "id": "waveshare-esp32-p4-touch-lcd-4.3",
+    "manufacturer": "Waveshare",
+    "reference": "ESP32-P4-Touch-LCD-4.3",
+    "commercial_name": "4.3 Inch ESP32-P4 Capacitive Touch LCD",
+    "revision": "1.0",
+    "release_date": "2024-05-20",
+    "status": "production",
+    "price_usd": 119.99,
+    "soc": {
+      "name": "ESP32-P4",
+      "architecture": "RISC-V",
+      "cores": 2,
+      "frequency_mhz": 360,
+      "riscv_isa": "RV32IMAC"
+    },
+    "memory": {
+      "flash_mb": 16,
+      "psram_mb": 32,
+      "sram_mb": 0.8,
+      "memory_type": "PSRAM"
+    },
+    "display": {
+      "enabled": true,
+      "size_inches": 4.3,
+      "resolution": "480x272",
+      "type": "IPS LCD",
+      "interface": "RGB",
+      "colors": 16777216,
+      "brightness": true,
+      "touchscreen": true,
+      "touch_type": "capacitive",
+      "touch_controller": "GT911"
+    },
+    "connectivity": {
+      "wifi": false,
+      "wifi6": false,
+      "bluetooth": false,
+      "ble": false,
+      "zigbee": false,
+      "thread": false,
+      "matter": false,
+      "ethernet": true
+    },
+    "interfaces": {
+      "gpio_count": 55,
+      "uart": 3,
+      "spi": 3,
+      "i2c": 1,
+      "i2s": 2,
+      "usb": 2,
+      "usb_type": "USB 2.0 HS",
+      "jtag": true,
+      "can": true,
+      "microsd": true
+    },
+    "multimedia": {
+      "camera": true,
+      "mipi_csi": true,
+      "dvp": false,
+      "microphone": false,
+      "speaker": false,
+      "audio_codec": null
+    },
+    "software_support": {
+      "esp_idf": true,
+      "arduino": true,
+      "platformio": true,
+      "zephyr": false,
+      "micropython": true,
+      "lvgl": true,
+      "rust": true
+    },
+    "documentation": {
+      "datasheet_url": "https://www.waveshare.com/wiki/ESP32-P4-Touch-LCD-4.3",
+      "schematic_url": "https://www.waveshare.com/wiki/ESP32-P4-Touch-LCD-4.3",
+      "pinout_url": "https://www.waveshare.com/wiki/ESP32-P4-Touch-LCD-4.3",
+      "github_repo": "https://github.com/waveshare/ESP32-P4-Touch-LCD",
+      "wiki_url": "https://www.waveshare.com/wiki/ESP32-P4-Touch-LCD-4.3",
+      "manual_url": null,
+      "examples_url": "https://github.com/waveshare/ESP32-P4-Touch-LCD",
+      "notes": "Compact 4.3\" RGB interface capacitive touch display. LVGL ready. Perfect for industrial applications."
+    },
+    "links": {
+      "buy_link": "https://www.waveshare.com/shop/ESP32-P4-Touch-LCD-4.3.htm",
+      "manufacturer_page": "https://www.waveshare.com/product/ESP32-P4-Touch-LCD-4.3.htm",
+      "github_projects": [
+        "https://github.com/waveshare/ESP32-P4-Touch-LCD"
+      ]
+    }
+  },
+  {
+    "id": "waveshare-esp32-c6-lcd-2.4",
+    "manufacturer": "Waveshare",
+    "reference": "ESP32-C6-LCD-2.4",
+    "commercial_name": "2.4 Inch ESP32-C6 LCD Display",
+    "revision": "1.0",
+    "release_date": "2024-03-10",
+    "status": "production",
+    "price_usd": 34.99,
+    "soc": {
+      "name": "ESP32-C6",
+      "architecture": "RISC-V",
+      "cores": 1,
+      "frequency_mhz": 160,
+      "riscv_isa": "RV32IMAC"
+    },
+    "memory": {
+      "flash_mb": 8,
+      "psram_mb": 8,
+      "sram_mb": 0.5,
+      "memory_type": "PSRAM"
+    },
+    "display": {
+      "enabled": true,
+      "size_inches": 2.4,
+      "resolution": "320x240",
+      "type": "IPS LCD",
+      "interface": "SPI",
+      "colors": 65536,
+      "brightness": true,
+      "touchscreen": false,
+      "touch_type": null,
+      "touch_controller": null
+    },
+    "connectivity": {
+      "wifi": true,
+      "wifi6": true,
+      "bluetooth": false,
+      "ble": true,
+      "zigbee": true,
+      "thread": true,
+      "matter": true,
+      "ethernet": false
+    },
+    "interfaces": {
+      "gpio_count": 30,
+      "uart": 2,
+      "spi": 2,
+      "i2c": 1,
+      "i2s": 1,
+      "usb": 1,
+      "usb_type": "USB-C",
+      "jtag": true,
+      "can": true,
+      "microsd": true
+    },
+    "multimedia": {
+      "camera": false,
+      "mipi_csi": false,
+      "dvp": false,
+      "microphone": false,
+      "speaker": false,
+      "audio_codec": null
+    },
+    "software_support": {
+      "esp_idf": true,
+      "arduino": true,
+      "platformio": true,
+      "zephyr": true,
+      "micropython": true,
+      "lvgl": true,
+      "rust": true
+    },
+    "documentation": {
+      "datasheet_url": "https://www.waveshare.com/wiki/ESP32-C6-LCD-2.4",
+      "schematic_url": "https://www.waveshare.com/wiki/ESP32-C6-LCD-2.4",
+      "pinout_url": "https://www.waveshare.com/wiki/ESP32-C6-LCD-2.4",
+      "github_repo": "https://github.com/waveshare/ESP32-C6-Display",
+      "wiki_url": "https://www.waveshare.com/wiki/ESP32-C6-LCD-2.4",
+      "manual_url": null,
+      "examples_url": "https://github.com/waveshare/ESP32-C6-Display",
+      "notes": "Compact 2.4\" SPI display with Wi-Fi 6, Zigbee, Thread, Matter support. IoT ready."
+    },
+    "links": {
+      "buy_link": "https://www.waveshare.com/shop/ESP32-C6-LCD-2.4.htm",
+      "manufacturer_page": "https://www.waveshare.com/product/ESP32-C6-LCD-2.4.htm",
+      "github_projects": [
+        "https://github.com/waveshare/ESP32-C6-Display"
+      ]
+    }
+  },
+  {
+    "id": "lilygo-t-display-c3",
+    "manufacturer": "LilyGO",
+    "reference": "T-Display-C3",
+    "commercial_name": "T-Display C3 Development Board",
+    "revision": "1.0",
+    "release_date": "2022-12-01",
+    "status": "production",
+    "price_usd": 24.99,
+    "soc": {
+      "name": "ESP32-C3",
+      "architecture": "RISC-V",
+      "cores": 1,
+      "frequency_mhz": 160,
+      "riscv_isa": "RV32IMAC"
+    },
+    "memory": {
+      "flash_mb": 4,
+      "psram_mb": 0,
+      "sram_mb": 0.4,
+      "memory_type": null
+    },
+    "display": {
+      "enabled": true,
+      "size_inches": 1.14,
+      "resolution": "240x135",
+      "type": "IPS LCD",
+      "interface": "SPI",
+      "colors": 65536,
+      "brightness": true,
+      "touchscreen": false,
+      "touch_type": null,
+      "touch_controller": null
+    },
+    "connectivity": {
+      "wifi": true,
+      "wifi6": false,
+      "bluetooth": false,
+      "ble": true,
+      "zigbee": false,
+      "thread": false,
+      "matter": false,
+      "ethernet": false
+    },
+    "interfaces": {
+      "gpio_count": 22,
+      "uart": 2,
+      "spi": 1,
+      "i2c": 1,
+      "i2s": 1,
+      "usb": 1,
+      "usb_type": "USB-C",
+      "jtag": true,
+      "can": false,
+      "microsd": false
+    },
+    "multimedia": {
+      "camera": false,
+      "mipi_csi": false,
+      "dvp": false,
+      "microphone": false,
+      "speaker": false,
+      "audio_codec": null
+    },
+    "software_support": {
+      "esp_idf": true,
+      "arduino": true,
+      "platformio": true,
+      "zephyr": true,
+      "micropython": true,
+      "lvgl": true,
+      "rust": true
+    },
+    "documentation": {
+      "datasheet_url": "https://github.com/Xinyuan-LilyGO/T-Display-S3/wiki",
+      "schematic_url": "https://github.com/Xinyuan-LilyGO/T-Display-S3",
+      "pinout_url": "https://github.com/Xinyuan-LilyGO/T-Display-S3/wiki",
+      "github_repo": "https://github.com/Xinyuan-LilyGO/T-Display-C3",
+      "wiki_url": "https://github.com/Xinyuan-LilyGO/T-Display-C3/wiki",
+      "manual_url": null,
+      "examples_url": "https://github.com/Xinyuan-LilyGO/T-Display-C3/tree/main/example",
+      "notes": "Pocket-size 1.14\" display with Wi-Fi and BLE. Popular maker board."
+    },
+    "links": {
+      "buy_link": "https://www.lilygo.cc/products/t-display-c3",
+      "manufacturer_page": "https://www.lilygo.cc/products/t-display-c3",
+      "github_projects": [
+        "https://github.com/Xinyuan-LilyGO/T-Display-C3"
+      ]
+    }
+  },
+  {
+    "id": "lilygo-t-display-c6",
+    "manufacturer": "LilyGO",
+    "reference": "T-Display-C6",
+    "commercial_name": "T-Display C6 Development Board",
+    "revision": "1.0",
+    "release_date": "2024-02-15",
+    "status": "production",
+    "price_usd": 29.99,
+    "soc": {
+      "name": "ESP32-C6",
+      "architecture": "RISC-V",
+      "cores": 1,
+      "frequency_mhz": 160,
+      "riscv_isa": "RV32IMAC"
+    },
+    "memory": {
+      "flash_mb": 8,
+      "psram_mb": 8,
+      "sram_mb": 0.5,
+      "memory_type": "PSRAM"
+    },
+    "display": {
+      "enabled": true,
+      "size_inches": 1.28,
+      "resolution": "240x240",
+      "type": "AMOLED",
+      "interface": "SPI",
+      "colors": 16777216,
+      "brightness": true,
+      "touchscreen": false,
+      "touch_type": null,
+      "touch_controller": null
+    },
+    "connectivity": {
+      "wifi": true,
+      "wifi6": true,
+      "bluetooth": false,
+      "ble": true,
+      "zigbee": true,
+      "thread": true,
+      "matter": true,
+      "ethernet": false
+    },
+    "interfaces": {
+      "gpio_count": 30,
+      "uart": 2,
+      "spi": 2,
+      "i2c": 1,
+      "i2s": 1,
+      "usb": 1,
+      "usb_type": "USB-C",
+      "jtag": true,
+      "can": true,
+      "microsd": false
+    },
+    "multimedia": {
+      "camera": false,
+      "mipi_csi": false,
+      "dvp": false,
+      "microphone": false,
+      "speaker": false,
+      "audio_codec": null
+    },
+    "software_support": {
+      "esp_idf": true,
+      "arduino": true,
+      "platformio": true,
+      "zephyr": true,
+      "micropython": true,
+      "lvgl": true,
+      "rust": true
+    },
+    "documentation": {
+      "datasheet_url": "https://github.com/Xinyuan-LilyGO/T-Display-C6",
+      "schematic_url": "https://github.com/Xinyuan-LilyGO/T-Display-C6",
+      "pinout_url": "https://github.com/Xinyuan-LilyGO/T-Display-C6/wiki",
+      "github_repo": "https://github.com/Xinyuan-LilyGO/T-Display-C6",
+      "wiki_url": "https://github.com/Xinyuan-LilyGO/T-Display-C6/wiki",
+      "manual_url": null,
+      "examples_url": "https://github.com/Xinyuan-LilyGO/T-Display-C6/tree/main/example",
+      "notes": "1.28\" AMOLED display with Wi-Fi 6, Zigbee, Thread, Matter. Premium connectivity."
+    },
+    "links": {
+      "buy_link": "https://www.lilygo.cc/products/t-display-c6",
+      "manufacturer_page": "https://www.lilygo.cc/products/t-display-c6",
+      "github_projects": [
+        "https://github.com/Xinyuan-LilyGO/T-Display-C6"
+      ]
+    }
+  },
+  {
+    "id": "m5stack-stamp-c3",
+    "manufacturer": "M5Stack",
+    "reference": "M5Stack Stamp C3",
+    "commercial_name": "M5Stack Stamp C3",
+    "revision": "1.1",
+    "release_date": "2022-06-01",
+    "status": "production",
+    "price_usd": 19.99,
+    "soc": {
+      "name": "ESP32-C3",
+      "architecture": "RISC-V",
+      "cores": 1,
+      "frequency_mhz": 160,
+      "riscv_isa": "RV32IMAC"
+    },
+    "memory": {
+      "flash_mb": 4,
+      "psram_mb": 0,
+      "sram_mb": 0.4,
+      "memory_type": null
+    },
+    "display": {
+      "enabled": false,
+      "size_inches": null,
+      "resolution": null,
+      "type": null,
+      "interface": null,
+      "colors": null,
+      "brightness": null,
+      "touchscreen": false,
+      "touch_type": null,
+      "touch_controller": null
+    },
+    "connectivity": {
+      "wifi": true,
+      "wifi6": false,
+      "bluetooth": false,
+      "ble": true,
+      "zigbee": false,
+      "thread": false,
+      "matter": false,
+      "ethernet": false
+    },
+    "interfaces": {
+      "gpio_count": 20,
+      "uart": 2,
+      "spi": 1,
+      "i2c": 1,
+      "i2s": 1,
+      "usb": 1,
+      "usb_type": "USB-C",
+      "jtag": true,
+      "can": false,
+      "microsd": false
+    },
+    "multimedia": {
+      "camera": false,
+      "mipi_csi": false,
+      "dvp": false,
+      "microphone": false,
+      "speaker": false,
+      "audio_codec": null
+    },
+    "software_support": {
+      "esp_idf": true,
+      "arduino": true,
+      "platformio": true,
+      "zephyr": true,
+      "micropython": true,
+      "lvgl": false,
+      "rust": true
+    },
+    "documentation": {
+      "datasheet_url": "https://m5stack.com/products/m5stamp-c3",
+      "schematic_url": "https://github.com/m5stack/M5StampC3",
+      "pinout_url": "https://m5stack.com/products/m5stamp-c3",
+      "github_repo": "https://github.com/m5stack/M5StampC3",
+      "wiki_url": "https://docs.m5stack.com/en/stamp/stamp_c3",
+      "manual_url": null,
+      "examples_url": "https://github.com/m5stack/M5StampC3/tree/main/examples",
+      "notes": "Tiny footprint, IoT-focused module. Wi-Fi and BLE support."
+    },
+    "links": {
+      "buy_link": "https://m5stack.com/products/m5stamp-c3",
+      "manufacturer_page": "https://m5stack.com/products/m5stamp-c3",
+      "github_projects": [
+        "https://github.com/m5stack/M5StampC3"
+      ]
+    }
+  },
+  {
+    "id": "m5stack-stamp-c6",
+    "manufacturer": "M5Stack",
+    "reference": "M5Stack Stamp C6",
+    "commercial_name": "M5Stack Stamp C6",
+    "revision": "1.0",
+    "release_date": "2024-03-01",
+    "status": "production",
+    "price_usd": 24.99,
+    "soc": {
+      "name": "ESP32-C6",
+      "architecture": "RISC-V",
+      "cores": 1,
+      "frequency_mhz": 160,
+      "riscv_isa": "RV32IMAC"
+    },
+    "memory": {
+      "flash_mb": 8,
+      "psram_mb": 8,
+      "sram_mb": 0.5,
+      "memory_type": "PSRAM"
+    },
+    "display": {
+      "enabled": false,
+      "size_inches": null,
+      "resolution": null,
+      "type": null,
+      "interface": null,
+      "colors": null,
+      "brightness": null,
+      "touchscreen": false,
+      "touch_type": null,
+      "touch_controller": null
+    },
+    "connectivity": {
+      "wifi": true,
+      "wifi6": true,
+      "bluetooth": false,
+      "ble": true,
+      "zigbee": true,
+      "thread": true,
+      "matter": true,
+      "ethernet": false
+    },
+    "interfaces": {
+      "gpio_count": 30,
+      "uart": 2,
+      "spi": 2,
+      "i2c": 1,
+      "i2s": 1,
+      "usb": 1,
+      "usb_type": "USB-C",
+      "jtag": true,
+      "can": true,
+      "microsd": false
+    },
+    "multimedia": {
+      "camera": false,
+      "mipi_csi": false,
+      "dvp": false,
+      "microphone": false,
+      "speaker": false,
+      "audio_codec": null
+    },
+    "software_support": {
+      "esp_idf": true,
+      "arduino": true,
+      "platformio": true,
+      "zephyr": true,
+      "micropython": true,
+      "lvgl": false,
+      "rust": true
+    },
+    "documentation": {
+      "datasheet_url": "https://m5stack.com/products/m5stamp-c6",
+      "schematic_url": "https://github.com/m5stack/M5StampC6",
+      "pinout_url": "https://m5stack.com/products/m5stamp-c6",
+      "github_repo": "https://github.com/m5stack/M5StampC6",
+      "wiki_url": "https://docs.m5stack.com/en/stamp/stamp_c6",
+      "manual_url": null,
+      "examples_url": "https://github.com/m5stack/M5StampC6/tree/main/examples",
+      "notes": "Compact module with Wi-Fi 6, Zigbee, Thread, Matter support. Professional IoT."
+    },
+    "links": {
+      "buy_link": "https://m5stack.com/products/m5stamp-c6",
+      "manufacturer_page": "https://m5stack.com/products/m5stamp-c6",
+      "github_projects": [
+        "https://github.com/m5stack/M5StampC6"
+      ]
+    }
+  },
+  {
+    "id": "makerfabs-esp32-c3-display-2.4",
+    "manufacturer": "Makerfabs",
+    "reference": "ESP32-C3-Display-2.4",
+    "commercial_name": "2.4 Inch ESP32-C3 Display",
+    "revision": "1.0",
+    "release_date": "2023-01-20",
+    "status": "production",
+    "price_usd": 39.99,
+    "soc": {
+      "name": "ESP32-C3",
+      "architecture": "RISC-V",
+      "cores": 1,
+      "frequency_mhz": 160,
+      "riscv_isa": "RV32IMAC"
+    },
+    "memory": {
+      "flash_mb": 4,
+      "psram_mb": 0,
+      "sram_mb": 0.4,
+      "memory_type": null
+    },
+    "display": {
+      "enabled": true,
+      "size_inches": 2.4,
+      "resolution": "320x240",
+      "type": "IPS LCD",
+      "interface": "SPI",
+      "colors": 65536,
+      "brightness": true,
+      "touchscreen": false,
+      "touch_type": null,
+      "touch_controller": null
+    },
+    "connectivity": {
+      "wifi": true,
+      "wifi6": false,
+      "bluetooth": false,
+      "ble": true,
+      "zigbee": false,
+      "thread": false,
+      "matter": false,
+      "ethernet": false
+    },
+    "interfaces": {
+      "gpio_count": 22,
+      "uart": 2,
+      "spi": 1,
+      "i2c": 1,
+      "i2s": 1,
+      "usb": 1,
+      "usb_type": "USB-C",
+      "jtag": true,
+      "can": false,
+      "microsd": false
+    },
+    "multimedia": {
+      "camera": false,
+      "mipi_csi": false,
+      "dvp": false,
+      "microphone": false,
+      "speaker": false,
+      "audio_codec": null
+    },
+    "software_support": {
+      "esp_idf": true,
+      "arduino": true,
+      "platformio": true,
+      "zephyr": true,
+      "micropython": true,
+      "lvgl": true,
+      "rust": true
+    },
+    "documentation": {
+      "datasheet_url": "https://www.makerfabs.com/esp32-c3-display-2-4.html",
+      "schematic_url": "https://www.makerfabs.com/esp32-c3-display-2-4.html",
+      "pinout_url": "https://www.makerfabs.com/esp32-c3-display-2-4.html",
+      "github_repo": "https://github.com/Makerfabs/ESP32-C3-Display",
+      "wiki_url": "https://www.makerfabs.com/wiki/index.php?title=ESP32-C3-Display-2.4",
+      "manual_url": null,
+      "examples_url": "https://github.com/Makerfabs/ESP32-C3-Display",
+      "notes": "Affordable 2.4\" SPI display board with Wi-Fi and BLE. Great for beginners."
+    },
+    "links": {
+      "buy_link": "https://www.makerfabs.com/esp32-c3-display-2-4.html",
+      "manufacturer_page": "https://www.makerfabs.com/esp32-c3-display-2-4.html",
+      "github_projects": [
+        "https://github.com/Makerfabs/ESP32-C3-Display"
+      ]
+    }
+  },
+  {
+    "id": "sunton-jc2432c3",
+    "manufacturer": "Sunton",
+    "reference": "JC2432C3",
+    "commercial_name": "2.4 Inch ESP32-C3 LCD (Resistive Touch)",
+    "revision": "1.0",
+    "release_date": "2023-05-10",
+    "status": "production",
+    "price_usd": 44.99,
+    "soc": {
+      "name": "ESP32-C3",
+      "architecture": "RISC-V",
+      "cores": 1,
+      "frequency_mhz": 160,
+      "riscv_isa": "RV32IMAC"
+    },
+    "memory": {
+      "flash_mb": 4,
+      "psram_mb": 0,
+      "sram_mb": 0.4,
+      "memory_type": null
+    },
+    "display": {
+      "enabled": true,
+      "size_inches": 2.4,
+      "resolution": "320x240",
+      "type": "IPS LCD",
+      "interface": "SPI",
+      "colors": 65536,
+      "brightness": true,
+      "touchscreen": true,
+      "touch_type": "resistive",
+      "touch_controller": "XPT2046"
+    },
+    "connectivity": {
+      "wifi": true,
+      "wifi6": false,
+      "bluetooth": false,
+      "ble": true,
+      "zigbee": false,
+      "thread": false,
+      "matter": false,
+      "ethernet": false
+    },
+    "interfaces": {
+      "gpio_count": 22,
+      "uart": 2,
+      "spi": 1,
+      "i2c": 1,
+      "i2s": 1,
+      "usb": 1,
+      "usb_type": "USB-C",
+      "jtag": true,
+      "can": false,
+      "microsd": true
+    },
+    "multimedia": {
+      "camera": false,
+      "mipi_csi": false,
+      "dvp": false,
+      "microphone": false,
+      "speaker": false,
+      "audio_codec": null
+    },
+    "software_support": {
+      "esp_idf": true,
+      "arduino": true,
+      "platformio": true,
+      "zephyr": true,
+      "micropython": true,
+      "lvgl": true,
+      "rust": true
+    },
+    "documentation": {
+      "datasheet_url": "https://github.com/Sunton-tech/JC2432C3",
+      "schematic_url": "https://github.com/Sunton-tech/JC2432C3",
+      "pinout_url": "https://github.com/Sunton-tech/JC2432C3/wiki",
+      "github_repo": "https://github.com/Sunton-tech/JC2432C3",
+      "wiki_url": "https://github.com/Sunton-tech/JC2432C3/wiki",
+      "manual_url": null,
+      "examples_url": "https://github.com/Sunton-tech/JC2432C3/tree/main/example",
+      "notes": "Industrial-grade 2.4\" resistive touch display. microSD card slot included."
+    },
+    "links": {
+      "buy_link": "https://www.aliexpress.com/wholesale?SearchText=JC2432C3",
+      "manufacturer_page": "https://github.com/Sunton-tech/JC2432C3",
+      "github_projects": [
+        "https://github.com/Sunton-tech/JC2432C3"
+      ]
+    }
+  },
+  {
+    "id": "sunton-jc4827c6",
+    "manufacturer": "Sunton",
+    "reference": "JC4827C6",
+    "commercial_name": "4.8 Inch ESP32-C6 LCD (Capacitive Touch)",
+    "revision": "1.0",
+    "release_date": "2024-02-01",
+    "status": "production",
+    "price_usd": 79.99,
+    "soc": {
+      "name": "ESP32-C6",
+      "architecture": "RISC-V",
+      "cores": 1,
+      "frequency_mhz": 160,
+      "riscv_isa": "RV32IMAC"
+    },
+    "memory": {
+      "flash_mb": 8,
+      "psram_mb": 8,
+      "sram_mb": 0.5,
+      "memory_type": "PSRAM"
+    },
+    "display": {
+      "enabled": true,
+      "size_inches": 4.8,
+      "resolution": "480x320",
+      "type": "IPS LCD",
+      "interface": "RGB",
+      "colors": 65536,
+      "brightness": true,
+      "touchscreen": true,
+      "touch_type": "capacitive",
+      "touch_controller": "GT911"
+    },
+    "connectivity": {
+      "wifi": true,
+      "wifi6": true,
+      "bluetooth": false,
+      "ble": true,
+      "zigbee": true,
+      "thread": true,
+      "matter": true,
+      "ethernet": false
+    },
+    "interfaces": {
+      "gpio_count": 30,
+      "uart": 2,
+      "spi": 2,
+      "i2c": 1,
+      "i2s": 1,
+      "usb": 1,
+      "usb_type": "USB-C",
+      "jtag": true,
+      "can": true,
+      "microsd": true
+    },
+    "multimedia": {
+      "camera": false,
+      "mipi_csi": false,
+      "dvp": false,
+      "microphone": false,
+      "speaker": false,
+      "audio_codec": null
+    },
+    "software_support": {
+      "esp_idf": true,
+      "arduino": true,
+      "platformio": true,
+      "zephyr": true,
+      "micropython": true,
+      "lvgl": true,
+      "rust": true
+    },
+    "documentation": {
+      "datasheet_url": "https://github.com/Sunton-tech/JC4827C6",
+      "schematic_url": "https://github.com/Sunton-tech/JC4827C6",
+      "pinout_url": "https://github.com/Sunton-tech/JC4827C6/wiki",
+      "github_repo": "https://github.com/Sunton-tech/JC4827C6",
+      "wiki_url": "https://github.com/Sunton-tech/JC4827C6/wiki",
+      "manual_url": null,
+      "examples_url": "https://github.com/Sunton-tech/JC4827C6/tree/main/example",
+      "notes": "Professional 4.8\" RGB capacitive touch display with Wi-Fi 6, Zigbee, Thread, Matter support."
+    },
+    "links": {
+      "buy_link": "https://www.aliexpress.com/wholesale?SearchText=JC4827C6",
+      "manufacturer_page": "https://github.com/Sunton-tech/JC4827C6",
+      "github_projects": [
+        "https://github.com/Sunton-tech/JC4827C6"
+      ]
+    }
+  },
+  {
+    "id": "sunton-jc8048p4c6",
+    "manufacturer": "Sunton",
+    "reference": "JC8048P4C6",
+    "commercial_name": "8.0 Inch ESP32-P4+C6 LCD (Capacitive Touch)",
+    "revision": "1.0",
+    "release_date": "2024-06-01",
+    "status": "production",
+    "price_usd": 249.99,
+    "soc": {
+      "name": "ESP32-P4 + ESP32-C6",
+      "architecture": "RISC-V Dual-SoC",
+      "cores": 3,
+      "frequency_mhz": 360,
+      "riscv_isa": "RV32IMAC"
+    },
+    "memory": {
+      "flash_mb": 32,
+      "psram_mb": 32,
+      "sram_mb": 1.6,
+      "memory_type": "PSRAM"
+    },
+    "display": {
+      "enabled": true,
+      "size_inches": 8.0,
+      "resolution": "1024x600",
+      "type": "IPS LCD",
+      "interface": "RGB",
+      "colors": 16777216,
+      "brightness": true,
+      "touchscreen": true,
+      "touch_type": "capacitive",
+      "touch_controller": "GT911"
+    },
+    "connectivity": {
+      "wifi": true,
+      "wifi6": true,
+      "bluetooth": false,
+      "ble": true,
+      "zigbee": true,
+      "thread": true,
+      "matter": true,
+      "ethernet": true
+    },
+    "interfaces": {
+      "gpio_count": 85,
+      "uart": 5,
+      "spi": 5,
+      "i2c": 2,
+      "i2s": 3,
+      "usb": 2,
+      "usb_type": "USB 2.0 HS",
+      "jtag": true,
+      "can": true,
+      "microsd": true
+    },
+    "multimedia": {
+      "camera": true,
+      "mipi_csi": true,
+      "dvp": false,
+      "microphone": true,
+      "speaker": true,
+      "audio_codec": "ES7243E"
+    },
+    "software_support": {
+      "esp_idf": true,
+      "arduino": true,
+      "platformio": true,
+      "zephyr": false,
+      "micropython": true,
+      "lvgl": true,
+      "rust": true
+    },
+    "documentation": {
+      "datasheet_url": "https://github.com/Sunton-tech/JC8048P4C6",
+      "schematic_url": "https://github.com/Sunton-tech/JC8048P4C6",
+      "pinout_url": "https://github.com/Sunton-tech/JC8048P4C6/wiki",
+      "github_repo": "https://github.com/Sunton-tech/JC8048P4C6",
+      "wiki_url": "https://github.com/Sunton-tech/JC8048P4C6/wiki",
+      "manual_url": null,
+      "examples_url": "https://github.com/Sunton-tech/JC8048P4C6/tree/main/example",
+      "notes": "Premium 8\" dual-SoC board. P4 for graphics, C6 for wireless connectivity. Industrial-grade display with camera support."
+    },
+    "links": {
+      "buy_link": "https://www.aliexpress.com/wholesale?SearchText=JC8048P4C6",
+      "manufacturer_page": "https://github.com/Sunton-tech/JC8048P4C6",
+      "github_projects": [
+        "https://github.com/Sunton-tech/JC8048P4C6"
+      ]
+    }
+  },
+  {
+    "id": "guition-gk7007c",
+    "manufacturer": "Guition",
+    "reference": "GK7007C",
+    "commercial_name": "7.0 Inch ESP32-C6 LCD (Capacitive Touch)",
+    "revision": "1.0",
+    "release_date": "2024-03-15",
+    "status": "production",
+    "price_usd": 129.99,
+    "soc": {
+      "name": "ESP32-C6",
+      "architecture": "RISC-V",
+      "cores": 1,
+      "frequency_mhz": 160,
+      "riscv_isa": "RV32IMAC"
+    },
+    "memory": {
+      "flash_mb": 8,
+      "psram_mb": 16,
+      "sram_mb": 0.5,
+      "memory_type": "PSRAM"
+    },
+    "display": {
+      "enabled": true,
+      "size_inches": 7.0,
+      "resolution": "800x480",
+      "type": "IPS LCD",
+      "interface": "RGB",
+      "colors": 65536,
+      "brightness": true,
+      "touchscreen": true,
+      "touch_type": "capacitive",
+      "touch_controller": "GT911"
+    },
+    "connectivity": {
+      "wifi": true,
+      "wifi6": true,
+      "bluetooth": false,
+      "ble": true,
+      "zigbee": true,
+      "thread": true,
+      "matter": true,
+      "ethernet": false
+    },
+    "interfaces": {
+      "gpio_count": 30,
+      "uart": 2,
+      "spi": 2,
+      "i2c": 1,
+      "i2s": 1,
+      "usb": 1,
+      "usb_type": "USB-C",
+      "jtag": true,
+      "can": true,
+      "microsd": true
+    },
+    "multimedia": {
+      "camera": false,
+      "mipi_csi": false,
+      "dvp": false,
+      "microphone": false,
+      "speaker": false,
+      "audio_codec": null
+    },
+    "software_support": {
+      "esp_idf": true,
+      "arduino": true,
+      "platformio": true,
+      "zephyr": true,
+      "micropython": true,
+      "lvgl": true,
+      "rust": true
+    },
+    "documentation": {
+      "datasheet_url": "https://github.com/guitiontech/GK7007C",
+      "schematic_url": "https://github.com/guitiontech/GK7007C",
+      "pinout_url": "https://github.com/guitiontech/GK7007C/wiki",
+      "github_repo": "https://github.com/guitiontech/GK7007C",
+      "wiki_url": "https://github.com/guitiontech/GK7007C/wiki",
+      "manual_url": null,
+      "examples_url": "https://github.com/guitiontech/GK7007C/tree/main/example",
+      "notes": "Professional 7\" RGB capacitive touch display with Wi-Fi 6, Zigbee, Thread, Matter support."
+    },
+    "links": {
+      "buy_link": "https://www.aliexpress.com/wholesale?SearchText=GK7007C",
+      "manufacturer_page": "https://github.com/guitiontech/GK7007C",
+      "github_projects": [
+        "https://github.com/guitiontech/GK7007C"
+      ]
+    }
+  },
+  {
+    "id": "elecrow-crowpanel-esp32-c6-5.0",
+    "manufacturer": "Elecrow",
+    "reference": "CrowPanel-5-C6",
+    "commercial_name": "CrowPanel 5\" ESP32-C6",
+    "revision": "1.0",
+    "release_date": "2024-04-01",
+    "status": "production",
+    "price_usd": 99.99,
+    "soc": {
+      "name": "ESP32-C6",
+      "architecture": "RISC-V",
+      "cores": 1,
+      "frequency_mhz": 160,
+      "riscv_isa": "RV32IMAC"
+    },
+    "memory": {
+      "flash_mb": 8,
+      "psram_mb": 16,
+      "sram_mb": 0.5,
+      "memory_type": "PSRAM"
+    },
+    "display": {
+      "enabled": true,
+      "size_inches": 5.0,
+      "resolution": "800x480",
+      "type": "IPS LCD",
+      "interface": "RGB",
+      "colors": 65536,
+      "brightness": true,
+      "touchscreen": true,
+      "touch_type": "capacitive",
+      "touch_controller": "GT911"
+    },
+    "connectivity": {
+      "wifi": true,
+      "wifi6": true,
+      "bluetooth": false,
+      "ble": true,
+      "zigbee": true,
+      "thread": true,
+      "matter": true,
+      "ethernet": false
+    },
+    "interfaces": {
+      "gpio_count": 30,
+      "uart": 2,
+      "spi": 2,
+      "i2c": 1,
+      "i2s": 1,
+      "usb": 1,
+      "usb_type": "USB-C",
+      "jtag": true,
+      "can": true,
+      "microsd": true
+    },
+    "multimedia": {
+      "camera": false,
+      "mipi_csi": false,
+      "dvp": false,
+      "microphone": false,
+      "speaker": false,
+      "audio_codec": null
+    },
+    "software_support": {
+      "esp_idf": true,
+      "arduino": true,
+      "platformio": true,
+      "zephyr": true,
+      "micropython": true,
+      "lvgl": true,
+      "rust": true
+    },
+    "documentation": {
+      "datasheet_url": "https://www.elecrow.com/crowpanel-5.html",
+      "schematic_url": "https://www.elecrow.com/crowpanel-5.html",
+      "pinout_url": "https://www.elecrow.com/crowpanel-5.html",
+      "github_repo": "https://github.com/Elecrow-RD/CrowPanel-5-ESP32-C6",
+      "wiki_url": "https://www.elecrow.com/crowpanel-5.html",
+      "manual_url": null,
+      "examples_url": "https://github.com/Elecrow-RD/CrowPanel-5-ESP32-C6",
+      "notes": "Maker-friendly 5\" RGB touch display with full connectivity suite. LVGL ready."
+    },
+    "links": {
+      "buy_link": "https://www.elecrow.com/crowpanel-5.html",
+      "manufacturer_page": "https://www.elecrow.com/crowpanel-5.html",
+      "github_projects": [
+        "https://github.com/Elecrow-RD/CrowPanel-5-ESP32-C6"
+      ]
+    }
+  },
+  {
+    "id": "adafruit-feather-esp32-c3-reverse-tft",
+    "manufacturer": "Adafruit",
+    "reference": "Feather ESP32-C3 Reverse TFT",
+    "commercial_name": "Feather ESP32-C3 Reverse TFT",
+    "revision": "1.0",
+    "release_date": "2023-08-01",
+    "status": "production",
+    "price_usd": 34.95,
+    "soc": {
+      "name": "ESP32-C3",
+      "architecture": "RISC-V",
+      "cores": 1,
+      "frequency_mhz": 160,
+      "riscv_isa": "RV32IMAC"
+    },
+    "memory": {
+      "flash_mb": 4,
+      "psram_mb": 0,
+      "sram_mb": 0.4,
+      "memory_type": null
+    },
+    "display": {
+      "enabled": true,
+      "size_inches": 0.96,
+      "resolution": "128x128",
+      "type": "IPS LCD",
+      "interface": "SPI",
+      "colors": 65536,
+      "brightness": true,
+      "touchscreen": false,
+      "touch_type": null,
+      "touch_controller": null
+    },
+    "connectivity": {
+      "wifi": true,
+      "wifi6": false,
+      "bluetooth": false,
+      "ble": true,
+      "zigbee": false,
+      "thread": false,
+      "matter": false,
+      "ethernet": false
+    },
+    "interfaces": {
+      "gpio_count": 20,
+      "uart": 1,
+      "spi": 1,
+      "i2c": 1,
+      "i2s": 1,
+      "usb": 1,
+      "usb_type": "USB-C",
+      "jtag": false,
+      "can": false,
+      "microsd": false
+    },
+    "multimedia": {
+      "camera": false,
+      "mipi_csi": false,
+      "dvp": false,
+      "microphone": false,
+      "speaker": false,
+      "audio_codec": null
+    },
+    "software_support": {
+      "esp_idf": true,
+      "arduino": true,
+      "platformio": true,
+      "zephyr": true,
+      "micropython": true,
+      "lvgl": true,
+      "rust": true
+    },
+    "documentation": {
+      "datasheet_url": "https://learn.adafruit.com/adafruit-feather-esp32-c3-reverse-tft",
+      "schematic_url": "https://learn.adafruit.com/adafruit-feather-esp32-c3-reverse-tft",
+      "pinout_url": "https://learn.adafruit.com/adafruit-feather-esp32-c3-reverse-tft",
+      "github_repo": "https://github.com/adafruit/Adafruit_CircuitPython_ESP32S2_TFT_LCD",
+      "wiki_url": "https://learn.adafruit.com/adafruit-feather-esp32-c3-reverse-tft",
+      "manual_url": null,
+      "examples_url": "https://learn.adafruit.com/adafruit-feather-esp32-c3-reverse-tft",
+      "notes": "Compact Feather form factor with 0.96\" display. Great for wearables and portable projects."
+    },
+    "links": {
+      "buy_link": "https://www.adafruit.com/product/5900",
+      "manufacturer_page": "https://www.adafruit.com/product/5900",
+      "github_projects": []
+    }
+  }
+]
